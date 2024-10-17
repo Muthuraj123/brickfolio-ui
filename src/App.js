@@ -1,23 +1,19 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import Header from './components/Header/Header';
+import Section3 from './components/Section3/Section3';
+import BottomNav from './components/Footer/BottomNav';
 
 function App() {
+  const [searchItems, setSearchItems] = useState([]);
+  const [bhktype, setBHKType] = useState('');
+  const [price, setPrice] = useState('');
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header searchItems={searchItems} setSearchItems={setSearchItems} setBHKType={setBHKType} setPrice={setPrice} />
+      <Section3 searchItems={searchItems} bhktype={bhktype} price={price} />
+      <BottomNav />
     </div>
   );
 }

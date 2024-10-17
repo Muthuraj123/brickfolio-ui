@@ -1,0 +1,224 @@
+.section3{
+    padding: 2.5rem 2rem;
+    font-family: inherit;
+}
+
+.section3 h1{
+    margin-top: .6rem;
+    font-weight: bold;
+    font-size: 1.9rem;
+    margin-left: .5rem;
+}
+
+.section3 h2{
+    color:#808080;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-left: .5rem;
+}
+
+.section3 .housing__main{
+    display: flex;
+    gap:1.3rem;
+    margin-top:2rem;
+    padding: .5rem;
+    position: relative;
+    margin-bottom: 9rem;
+}
+
+.section3 .housing__main .housing__main__sub1{
+    flex:.7;
+    padding: 0rem;
+}
+
+.section3 .housing__main .housing__main__sub2{
+    background-color:#E8E8E8;
+    flex:.3;
+    align-self: start;
+    position: sticky;
+    top: .5rem;
+    border-radius: 1rem;
+    padding: 0;
+}
+
+.section3.housing__main__sub2 .section1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.section3.housing__main__sub2 .section1 img:nth-child(1){
+    width: 26%;
+}
+
+.section3.housing__main__sub2 .section1 img:nth-child(2){
+    margin-top: 2rem;
+    width: 73%;
+}
+
+.section3.housing__main__sub2 .section1 p{
+    margin-top: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    font-size:1.35rem;
+}
+
+.section3.housing__main__sub2 .section2{
+    margin-top: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.section3.housing__main__sub2 .section2 p{
+    margin-top: 1.5rem;
+    font-weight: bold;
+    font-size:1.3rem;
+}
+
+.section3.housing__main__sub2 .section2 form{
+    margin-top:1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.section3.housing__main__sub2 .section2 form input{
+    background-color:#E8E8E8;
+    padding: 1rem 2rem;
+    outline: none;
+    border:1px solid #808080;
+    border-radius: .5rem;
+    margin-top: 1.5rem;
+    font-size: 1.45rem;
+}
+
+.section3.housing__main__sub2 .section2 form input:nth-child(2){
+    border:1px solid transparent;
+    margin-top: 0rem;
+}
+
+.section3.housing__main__sub2 .section2 form .phone_no{
+    display: flex;
+    background-color:#E8E8E8;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    border-radius: .5rem;
+    border:1px solid #808080;
+    margin-top: 1.5rem;
+    padding: .1rem .2rem;
+}
+
+.section3.housing__main__sub2 .section2 form .phone_no input{
+    flex: 1;
+}
+
+.section3.housing__main__sub2 .section2 form .phone_no div{
+    padding: .1rem .3rem;
+    font-size: 1.5rem;
+    background-color: #fff;
+    margin-left: .5rem;
+    border-radius: .5rem;
+}
+
+.section3.housing__main__sub2 .section2 form button{
+    background-color: #FF7A00;
+    color: #fff;
+    padding: 1rem 2rem;
+    margin-top: 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.3rem;
+    text-align: left;
+    font-weight: 700;
+}
+
+.section3.housing__main__sub2 .section2 form button:hover{
+    background-color: #fde7d7;
+    color: #000;
+}
+
+.search_not_found{
+    font-size: 1.8rem !important;
+}
+
+@media only screen and (max-width:96em){
+    .section3 .housing__main .housing__main__sub1{
+        flex:.75;
+    }
+    
+    .section3 .housing__main .housing__main__sub2{
+        flex:.25;
+    }
+
+    .section3.housing__main__sub2 .section1{
+        padding: 2.4rem .9rem;
+    }
+
+    .section3{
+        padding: 2.5rem 1rem;
+    }
+}
+
+@media only screen and (max-width:75em){
+    .section3 .housing__main .housing__main__sub1{
+        flex:1;
+    }
+    
+    .section3 .housing__main .housing__main__sub2{
+        display: none;
+    }
+    .item .section2 {
+        padding: .2rem .5rem !important;
+    }
+   
+    .section3 .housing__main .housing__main__sub1 {
+        padding: 0 !important;
+    }
+    .section3 .housing__main {
+        padding: .2rem !important;
+    }
+    .section3{
+        padding: 2.5rem 1.5rem;
+    }
+    .section3 h1{
+        margin-left: 0rem;
+    }
+    
+    .section3 h2{
+        margin-left: 0rem;
+    }
+}
+
+@media only screen and (max-width:56.25em){
+    .item .section2 {
+        padding: .2rem .2rem !important;
+    }
+
+    .section3 {
+        padding: 2rem 1rem;
+        font-family: inherit;
+    }
+}
+
+@media only screen and (max-width:37.5em){
+    .section3{
+        padding: 1rem .6rem;
+    }
+    .section3 h2{
+        font-size: 1.5rem;
+    }
+    .section3 h1.title-2{
+        font-size: 1.5rem;
+    }
+    .search_not_found{
+        font-size: 1.7rem !important;
+    }
+    .section3 .housing__main{
+        margin-top: 1.2rem;
+    }
+}

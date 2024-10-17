@@ -1,0 +1,88 @@
+ button{
+    outline: none;
+    outline: none;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    transition: color 0.4s ease, background-color 0.4s ease;
+}
+
+.button__main{
+    background-color: #FF7A00;
+    color: #fff;
+    border-radius: .5rem;
+    padding: .7rem 1rem;
+}
+
+.button__sub{
+    background-color: #fde7d7;
+    color: #000;
+    border-radius: 1rem;
+    padding: 1rem 1.7rem;
+    margin-right: .5rem;
+}
+
+.button__main:hover{
+    background-color: #fde7d7;
+    color: #000;
+}
+
+.button__sub:hover{
+    background-color: #FF7A00;
+    color: #fff;
+}
+
+.icon{
+    margin-right: .5rem;
+}
+
+@media only screen and (max-width:75em){
+    .text{
+        display: none;
+       }
+       .icon{
+        margin-right: 0;
+       }
+       button{
+        font-size: 1.5rem;
+       }
+}
+
+@media only screen and (max-width:56.25em){
+    .icon{
+        margin-right: .2rem;
+    }
+    button{
+        font-size: 1.5rem;
+       }
+       .text{
+        font-size: 1.3rem;
+       }
+       .button__main{
+        padding: .5rem !important;
+    }
+    
+    .button__sub{
+        padding: 1.3rem;
+        margin-right: .5rem;
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width:37.5em){
+    .button__sub {
+        padding: 1.1rem;
+        margin-right: 0rem;
+        font-size: 1.95rem !important;
+        margin-right: .2rem;
+    }
+
+    .button__main{
+        padding: .6rem !important;
+    }
+}

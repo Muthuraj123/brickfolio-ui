@@ -1,0 +1,58 @@
+.section__2{
+    background-color: #FF7A00;
+    padding: 1.3rem 3rem;
+    display: flex;
+    overflow-x: auto;
+}
+
+.section__2 select{
+    color:#808080;
+    padding: 1rem 1.5rem;
+    border-radius: .5rem;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+.section__2 select:nth-child(n+2){
+    margin-left: 1rem;
+}
+
+.section__2 select option {
+    font-size: 1.4rem;
+    color: #FF7A00;
+    background-color: #fff;
+    padding-top: 1.5rem !important;
+    font-weight: bold;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.section__2 select option:hover {
+    background-color: #FF7A00 !important;
+    color: #fff !important;
+}
+
+@media only screen and (max-width:56.25em){
+    .section__2{
+        padding: 1.3rem 1.5rem;
+    }
+    .section__2 select{
+        padding: 1rem 0rem;
+    }
+
+    .section__2 select option {
+        font-size: 1.1rem;
+        padding-top: .5rem !important;
+    }
+}
+
+@media only screen and (max-width:37.5em){
+    .section__2{
+        padding: 1.3rem 1rem;
+    }
+    .section__2 select:nth-child(n+2){
+        margin-left: .5rem;
+    }
+}

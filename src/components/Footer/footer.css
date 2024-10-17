@@ -1,0 +1,36 @@
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:#fff;
+    display: none;
+    padding: .4rem;
+    padding-bottom: .2rem;
+}
+
+.footer >div{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .3rem;
+    transition: all .3s;
+}
+
+.footer > div .icon{
+    font-size: 2.1rem;
+    font-weight: bold;
+}
+
+.footer > div span{
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-top: .2rem;
+}
+
+@media only screen and (max-width:37.5em){
+    .footer{
+        display: flex;
+    }
+}
