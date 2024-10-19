@@ -349,6 +349,7 @@
     top: 4rem;
     right: -2rem;
     transition: right .4s ease-in-out;
+    z-index: 10;
 }
 
 .section2:hover .delete-icon{
