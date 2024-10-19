@@ -339,6 +339,22 @@
     justify-content: start !important;
 }
 
+.section2{
+    position: relative;
+}
+
+.delete-icon{
+    font-size: 2.3rem;
+    position: absolute;
+    top: 4rem;
+    right: -2rem;
+    transition: right .4s ease-in-out;
+}
+
+.section2:hover .delete-icon{
+    right: 1rem;
+}
+
 ::-webkit-scrollbar {
     width: .7rem; 
     height: .5rem;
@@ -707,5 +723,23 @@
     }
     .image_show_mobile{
         display: block;
+    }
+    .delete-icon{
+        font-size: 2rem;
+        top: 3.2rem;
+        right: 1rem;
+        z-index: 10;
+    }
+
+    .section2 .title1{
+        flex-wrap: wrap;
+    }
+
+    .section2 .title1 > span{
+        margin-top: .1rem;
+    }
+
+    .section5{
+        flex-wrap: wrap;
     }
 }

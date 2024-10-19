@@ -211,6 +211,28 @@ function Section3({ searchItems, bhktype, price }) {
         setNotFound(false)
     }
 
+    function onDeleteItem(id) {
+        setLoading(true);
+        fetch(
+            `https://real-properties-2.onrender.com/api/properties/${id}`,
+            {
+                method: "DELETE",
+            }
+        )
+            .then((data) => {
+                if (data.status === "error") {
+                    throw new Error(data.message);
+                }
+                setProperties([]);
+                setNewProperties([]);
+                setLoading(false);
+                setReload((prev => !prev));
+            })
+            .catch((error) => {
+                console.error("Error:", error);
+            });
+    }
+
     return (
         <div className="section3">
             <h2>Home › Property in Pune › Flats in Pune</h2>
@@ -223,7 +245,7 @@ function Section3({ searchItems, bhktype, price }) {
                     cursor: 'grab',
                 }}>
                     {
-                        newProperties?.map((item, i) => <Item key={item.id} data={item} />)
+                        newProperties?.map((item, i) => <Item key={item.id} data={item} onDelete={onDeleteItem} />)
                     }
                     {(loading) && <Item type='grey' propertyName='' location='' bhkType='' price='' />}
                 </div>

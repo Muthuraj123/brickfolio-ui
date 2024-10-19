@@ -1,12 +1,12 @@
 import React, { useRef, useState } from 'react'
 import './item.css'
-import { FaAngleRight, FaCompressArrowsAlt, FaMapMarkerAlt, FaRegClock, FaTags } from 'react-icons/fa';
+import { FaAngleRight, FaCompressArrowsAlt, FaMapMarkerAlt, FaRegClock, FaTags, FaTimes } from 'react-icons/fa';
 import { formatNumber } from '../../utils';
 import { timeAgo } from '../../utils';
 import 'react-loading-skeleton/dist/skeleton.css';
 import Skeleton from 'react-loading-skeleton';
 
-function Item({ data, type }) {
+function Item({ data, type, onDelete }) {
     const divRef = useRef(null);
     const [isLoading, setIsLoading] = useState(true);
 
@@ -44,7 +44,8 @@ function Item({ data, type }) {
                     </div>
                 </div>
                 <div className="section2">
-                    <div>
+                    <span onClick={() => onDelete(data?.id)}><FaTimes class="delete-icon" /></span>
+                    <div className="title1">
                         <div className="section2__item1">
                             <h1>{data?.propertyName}</h1>
                             <span>RERA</span>
